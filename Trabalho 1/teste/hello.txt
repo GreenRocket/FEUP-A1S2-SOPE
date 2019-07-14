@@ -1,0 +1,52 @@
+// imprimir vars ambiente
+// int i = 0;
+// while (envp[i] != NULL)
+// {
+//     printf("%s\n", envp[i]);
+//     i++;
+// }
+// printf("\n\n");
+
+// adicionar/alterar/remover vars ambiente
+// char logPath[100];
+// if (getcwd(logPath, sizeof(logPath)) == NULL) // Get current process directory
+// {
+//     perror("getcwd() error");
+//     return 1;
+// }
+// if (setenv("LOGFILENAME", logPath, 0) == -1) // Set environment variable "LOGFILENAME" with /*current directory*/*log_file *.txt
+// {
+//     perror("setenv() error");
+//     return 1;
+// }
+
+
+// char wd[10240];
+    // if (getcwd(wd, sizeof(wd)) == NULL) // Get current process directory
+    // {
+    //     perror("getcwd() error");
+    //     return 1;
+    // }
+    // printf("%s\n",wd);
+
+    // printf("%ld\n",strlen(hashFunctions ));
+
+
+EXEMPLO:
+    fscanf(candidate_data, " \"%[^\"]\",%c,%lf,%lf", name, gender, height, weight);
+
+    Assuming you have already declared
+        a char array of considerable size named name,
+        a char of name gender and
+        two doubles of names height and weight
+
+    (space) scans and discards all whitespace characters until the first non-whitespace character.
+    \" scans the " from the file and discards it.
+    %[^\"] scans everything until a " and stores it in name.
+    \" scans the " from the file and discards it.
+    , scans and discards a comma.
+    %c scans a character and stores it in gender.
+    , scans and discards a comma.
+    %lf scans a double and stores it in height.
+    , scans and discards a comma.
+    %lf scans a double and stores it in weight.
